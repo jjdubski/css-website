@@ -4,8 +4,8 @@ import { getEntryBySlug } from "@/lib/api";
 import markdownStyles from "@/app/styles/markdown-styles.module.css";
 import Params from "@/app/types/params"
 
-export default async function Events({ params }: Params) {
-  const event = await getEntryBySlug("events", params.slug);
+export default async function Workshops({ params }: Params) {
+  const event = await getEntryBySlug("workshops", params.slug);
   if (!event) {
     return notFound();
   }
