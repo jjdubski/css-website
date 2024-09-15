@@ -5,9 +5,11 @@ export function Intro() {
     <section className="flex flex-row md:items-start mt-8">
       <Image
         src="/assets/logos/depaul-css-logo-transparent.png"
-        width={150}
-        height={150}
+        width={0}
+        height={0}
+        sizes="100vw"
         alt="Computer Science Society Logo"
+        style={{ width: 'auto', height: '120px' }}
       />
       <div className="flex flex-col self-center">
       <h1 className="text-3xl md:text-5xl font-bold">

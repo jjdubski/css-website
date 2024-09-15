@@ -1,25 +1,21 @@
-import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+// METADATA
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import cn from "classnames";
+
+export const metadata: Metadata = {
+  title: `Computer Science Society @DePaul`
+};
+
+// COMPONENTS
 import { Intro } from "@/app/_components/intro";
 import { Menu } from "@/app/_components/menu";
+import Footer from "@/app/_components/footer";
+
+// CONTENT CONTAINERS
 import Container from "@/app/_components/container";
 import Subcontainer from "@/app/_components/subcontainer";
 
-
+// STYLESHEET
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
-  openGraph: {
-    images: [HOME_OG_IMAGE_URL],
-  },
-};
 
 export default function RootLayout({
   children,
@@ -29,49 +25,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/favicon/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link
-          rel="mask-icon"
-          href="/favicon/safari-pinned-tab.svg"
-          color="#000000"
-        />
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#000000" />
-        <meta
-          name="msapplication-config"
-          content="/favicon/browserconfig.xml"
-        />
-        <meta name="theme-color" content="#000" />
-        <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <link rel="icon" type="image/x-icon" href="/assets/logos/depaul-css-logo-transparent.png" />
       </head>
-      <body
-        className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
-      >
+      <body className="bg-stone-100">
         <Container>
           <Intro />
           <Menu />
           <Subcontainer>
-            <div className="min-h-screen">{children}</div>
+            <main className="min-h-screen">{children}</main>
           </Subcontainer>
         </Container>
-        <Footer />
       </body>
     </html>
   );

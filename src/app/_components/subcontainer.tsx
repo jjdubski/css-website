@@ -3,7 +3,7 @@ type Props = {
   };
   
 const Subcontainer = ({ children }: Props) => {
-return <div className="mt-8 bg-stone-100">{children}</div>;
+return <div className="mt-8">{children}</div>;
 };
   
 export default Subcontainer;
