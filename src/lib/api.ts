@@ -1,58 +1,42 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import Entry from "@/app/types/entry";
 
-// Define the structure of your Event type
-type Entry = {
-  slug: string;
-  title: string;
-  date: string;
-  location: string;
-  description: string;
-  content: string;
-  coverImage: string;
-};
-
-export async function getAllSlugs(tableName: string): Promise<Entry | null> {
-  const dir = path.join('_db', tableName);
-  try {
-    
-  } catch (error) {
-    console.error(`Failed to load all entries at ${fullPath}`, error);
-    return null; 
-  }
-}
-
+// DEF: STRING -> Promise<ENTRY[]>
+// Returns an sequence of entries for a specified table
 export async function getAllEntries(tableName: string): Promise<Entry[]> {
+  // DB Path
   const dir = path.join('_db', tableName);
-
   try {
-    const contents = await fs.promises.readdir(dir);
-    const slugs = contents.map(file => file.replace(/\.md$/, ""));
+    // Retrieve all markdown file names for the specified table
+    const directoryContents = await fs.promises.readdir(dir); 
+    // Initialize a sequence of entries
     const entries: Entry[] = [];
-    for (const slug of slugs) {
-      const fullPath = path.join(dir, `${slug}.md`);
-
+    // Iterate through directory contents
+    for (const fileName of directoryContents) {
+      // Generate the full path
+      const fullPath = path.join(dir, `${fileName}`);
       try {
+        // Read file specified by fullPath, return the contents of the file
         const fileContents = await fs.promises.readFile(fullPath, "utf8");
+        // Decompose contents
         const { data, content } = matter(fileContents);
-
+        const slug = fileName.replace(/\.md$/, "")
         const e: Entry = {
-          slug,
-          title: data.title || "",
-          date: data.date || "",
-          location: data.location || "",
-          description: data.description || "",
-          coverImage: data.coverImage || "",
-          content
+          slug: slug,
+          title: data.title,
+          date: data.date,
+          location: data.location,
+          description: data.description,
+          coverImage: data.coverImage,
+          content: content
         };
-
         entries.push(e);
       } catch (innerError) {
         console.error(`Failed to read file at ${fullPath}`, innerError);
       }
     }
-
     return entries;
   } catch (error) {
     console.error(`Failed to load entries from directory ${dir}`, error);
@@ -61,25 +45,24 @@ export async function getAllEntries(tableName: string): Promise<Entry[]> {
 }
 
 
+// DEF: STRING STRING -> Promise<Event | null>
+// Returns a specific entry provided a table name and a slug from the url
 export async function getEntryBySlug(tableName: string, slug: string): Promise<Event | null> {
   const dir = path.join('_db', tableName);
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = path.join(dir, `${realSlug}.md`);
-
+  const fullPath = path.join(dir, `${slug}.md`);
   try {
     const fileContents = await fs.promises.readFile(fullPath, "utf8");
     const { data, content } = matter(fileContents);
-    
-    const event: Event = {
-      slug: realSlug,
-      title: data.title || "",
-      date: data.date || "",
-      location: data.location || "",
-      description: data.description || "",
-      content
+    const entry: Entry = {
+      slug: slug,
+      title: data.title,
+      date: data.date,
+      location: data.location,
+      description: data.description,
+      coverImage: data.coverImage,
+      content: content
     };
-    
-    return event;
+    return entry;
   } catch (error) {
     console.error(`Failed to load entry at ${fullPath}`, error);
     return null; 

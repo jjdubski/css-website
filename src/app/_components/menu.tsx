@@ -8,7 +8,7 @@ export function Menu() {
         <Link className="text-lg" href="/events">Events</Link>
         <Link className="text-lg" href="/workshops">Workshops</Link>
         <Link className="text-lg" href="/projects">Projects</Link>
-        <Link className="text-lg" href="/board">eBoard</Link>
+        <Link className="text-lg" href="/eboard">eBoard</Link>
       </div>
     </nav>
   );

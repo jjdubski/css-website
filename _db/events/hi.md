@@ -2,6 +2,7 @@
 title: "High-Profile Event"
 date: "2024-09-14"
 location: "Convention Center"
+coverImage: ""
 description: "An exciting event with high-profile guests. Woo hoo"
 ---
 
