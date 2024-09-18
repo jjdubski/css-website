@@ -1,4 +1,5 @@
 import { getAllEntries } from "@/lib/api";
+import renderEventPreview from "@/app/_components/render/renderEventPreview"
 
 export default async function Events() {
     const events = await getAllEntries("events");
@@ -11,10 +12,9 @@ export default async function Events() {
           ) : (
             <ul>
               {events.map(event => (
-                <li key={event.slug}>
-                  <a href={`/events/${event.slug}`}>{event.title}</a>
-                  <div>{event.description}</div>
-                </li>
+                <>
+                  {renderEventPreview(event)}
+                </>
               ))}
             </ul>
           )}
