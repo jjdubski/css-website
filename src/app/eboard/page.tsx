@@ -1,8 +1,10 @@
-export default function Board() {
+import rendereBoardPage from "@/app/_components/render/rendereBoardPage"
+
+export default function eBoard() {
     return (
-      <section className="flex flex-row md:items-start mt-8">
-        eBoard
-      </section>
+      <>
+        {rendereBoardPage()}
+      </>
     );
   }
   
