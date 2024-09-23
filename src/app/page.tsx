@@ -1,7 +1,10 @@
-import Container from "@/app/_components/container";
+import renderAboutPage from "@/app/_components/render/renderAboutPage"
+
 export default function Index() {
 
   return (
-    <>About</>
+    <>
+      {renderAboutPage()}
+    </>
   );
 }

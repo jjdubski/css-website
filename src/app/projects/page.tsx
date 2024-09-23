@@ -18,6 +18,6 @@ export default async function Projects() {
               ))}
           </ul>
       )}
-  </section>
+    </section>
     );
 }
