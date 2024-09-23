@@ -1,0 +1,7 @@
+---
+title: "person 1"
+date: "2024-09-14"
+location: ""
+coverImage: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+description: "This is a person, person is cool, so please be nice to person 1"
+---
