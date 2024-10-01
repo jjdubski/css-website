@@ -9,14 +9,27 @@ export default async function eBoard() {
       return notFound();
     }
 
+    const firstRow = eboard.slice(0, 2);
+    const rest = eboard.slice(2, eboard.length);
+
     return (
       <>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto p-4">
-        {eboard.map((member) => (
-          <li key={member.title} className="rounded-lg shadow-md list-none">
-            {rendereBoardSquare(member.slug)}
-          </li>
-        ))}
+      <ul className="max-w-7xl mx-auto space-y-4 mb-16">
+        <li className="grid grid-cols-2 gap-2">
+          {firstRow.map((member) => (
+            <div key={member.title} className="list-none">
+              {rendereBoardSquare(member.slug)}
+            </div>
+          ))}
+        </li>
+
+        <li className="grid grid-cols-3 gap-4">
+          {rest.map((member) => (
+            <div key={member.title} className="list-none">
+              {rendereBoardSquare(member.slug)}
+            </div>
+          ))}
+        </li>
       </ul>
     </>
     );

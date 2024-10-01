@@ -13,7 +13,7 @@ export default async function Events() {
                 ) : (
                     <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {events.map((event) => (
-                            <li key={event.title} className="rounded-lg shadow-md">
+                            <li key={event.title}>
                                 {renderEventPreview(event)}
                             </li>
                         ))}

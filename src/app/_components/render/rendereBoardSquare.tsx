@@ -9,10 +9,10 @@ const rendereBoardSquare = async (name: string) => {
         return notFound();
     }
 
-    const content = await markdownToHtml(eboard.content || "");
+    const content = await markdownToHtml();
 
     return (
-        <div className="max-w-xs mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="mx-auto bg-white rounded-lg shadow-md overflow-hidden">
             <img 
                 src={eboard.coverImage} 
                 alt={eboard.description} 
@@ -22,7 +22,7 @@ const rendereBoardSquare = async (name: string) => {
             <div className="p-4">
                 <h2 className="text-2xl font-bold text-gray-800 mb-2">{eboard.title}</h2>
 
-                <p className="text-sm font-medium text-gray-500 mb-4">{eboard.position || "Board Member"}</p>
+                <p className="text-sm font-medium text-gray-500 mb-4">{eboard.content || "Board Member"}</p>
 
                 <div className="text-gray-400 text-xs mb-4">
                     Last Updated: {new Date(eboard.date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}
@@ -31,10 +31,6 @@ const rendereBoardSquare = async (name: string) => {
                 <p className="text-gray-700 pb-2">
                     {eboard.description}
                 </p>
-
-                <div className={`${markdownStyles.markdown} prose max-w-none`}>
-                    <div dangerouslySetInnerHTML={{ __html: content }} />
-                </div>
             </div>
         </div>
     );
