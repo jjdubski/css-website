@@ -28,12 +28,15 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="/assets/logos/depaul-css-logo-transparent.png" />
       </head>
       <body className="bg-stone-100">
+        {/* Please do not question this double nested container. */}
         <Container>
-          <Intro />
-          <Menu />
-          <Subcontainer>
-            <main className="min-h-screen">{children}</main>
-          </Subcontainer>
+          <Container>
+            <Intro />
+            <Menu />
+            <Subcontainer>
+              <main className="min-h-screen">{children}</main>
+            </Subcontainer>
+          </Container>
         </Container>
       </body>
     </html>
