@@ -13,7 +13,6 @@ const rendereBoardSquare = async (name: string) => {
 
     return (
         <div className="max-w-xs mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-            {/* Card Image */}
             <img 
                 src={eboard.coverImage} 
                 alt={eboard.description} 
