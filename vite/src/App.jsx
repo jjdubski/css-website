@@ -1,3 +1,30 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Index from './pages/index';
+import About from './pages/about/About';
+import Events from './pages/events/Events';
+import Projects from './pages/projects/Projects';
+import Eboard from './pages/eboard/Eboard';
+import "./App.css"
+
+function App() {
+  return (
+    <Router>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/eboard" element={<Eboard />} />
+        </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
+
+
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
@@ -33,28 +60,3 @@
 // }
 
 // export default App
-
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Index from './pages/index';
-import About from './pages/about/about';
-import Events from './pages/events/events';
-import Projects from './pages/projects/projects';
-import Eboard from './pages/eboard/eboard';
-import "./App.css"
-
-function App() {
-  return (
-    <Router>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/eboard" element={<Eboard />} />
-        </Routes>
-    </Router>
-  );
-}
-
-export default App;
