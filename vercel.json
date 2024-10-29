@@ -5,12 +5,8 @@
         "destination": "/"
     },
     {
-        "source": "/components/(.*)",
+        "source": "../../components/(.*)",
         "destination": "/src/components/$1"
-    },
-    {
-        "source": "/pages/(.*)",
-        "destination": "/src/pages/$1"
     }
     ]
 }
