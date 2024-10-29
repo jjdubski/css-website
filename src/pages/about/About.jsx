@@ -1,4 +1,4 @@
-import Navbar from '@/components/navbar/Navbar.jsx'
+import Navbar from '@/components/navbar/Navbar'
 import "./about.css"
 
 
