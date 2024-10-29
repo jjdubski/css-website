@@ -1,5 +1,5 @@
 import Navbar from '../components/navbar/Navbar'
-import "events.css"
+import "./events.css"
 
 
 const Events = () => {
