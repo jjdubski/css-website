@@ -3,10 +3,6 @@
     {
         "source": "/(.*)",
         "destination": "/"
-    },
-    {
-        "source": "../../components/(.*)",
-        "destination": "src/components/$1"
     }
     ]
 }
