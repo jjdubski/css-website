@@ -1,0 +1,57 @@
+.welcome-cont{
+    text-wrap: pretty;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.welcome-title{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: calc(100% + 1.5vw); /* Adjust font size relative to viewport width */
+}
+
+.welcome-date{
+    font-family: Lato;
+    font-size: 0.9em;
+    color: rgb(170, 170, 170);
+}
+
+.welcome-msg{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 10px 0;
+}
+
+.welcome-msg p{
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+}
+
+.discord-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+}
+
+.button-cont{
+    width: fit-content;
+    justify-content: center;
+    align-self: center;
+}
+.button-cont a{
+    color: var(--color-text-light);
+    font-weight: 500;
+    font-size: 1em;
+    text-decoration: none;
+}
