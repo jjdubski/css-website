@@ -2,11 +2,10 @@
     text-wrap: pretty;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: left;
-    height: 100%;
-    width: 80%;
-    margin: 20px auto;
+    width: 100%;
+    padding: 0 7.5%;
 }
 
 .welcome-title{
@@ -14,7 +13,7 @@
     font-weight: 900;
     font-size: 100%;
     text-align: center;
-    margin: 20px 0;
+    margin: 50px 0 20px;
     font-size: calc(100% + 1.5vw); /* Adjust font size relative to viewport width */
 }
 
@@ -41,7 +40,7 @@
     margin: 20px auto;
     width: fit-content;
     padding: 10px 20px;
-    background-color: var(--color-primary);
+    background-color: var(--color-third);
 }
 
 .button-cont{
@@ -50,7 +49,7 @@
     align-self: center;
 }
 .button-cont a{
-    color: var(--color-text-light);
+    color: var(--color-white);
     font-weight: 500;
     font-size: 1em;
     text-decoration: none;

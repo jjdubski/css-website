@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './pages/Index';
-import About from './pages/About';
 import Events from './pages/Events';
 import Projects from './pages/Projects';
 import Eboard from './pages/Eboard';
@@ -11,7 +10,6 @@ function App() {
     <Router>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
           <Route path="/events" element={<Events />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/eboard" element={<Eboard />} />
