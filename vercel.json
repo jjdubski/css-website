@@ -6,7 +6,7 @@
     },
     {
         "source": "../../components/(.*)",
-        "destination": "components/$1"
+        "destination": "src/components/$1"
     }
     ]
 }
