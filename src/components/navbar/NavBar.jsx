@@ -15,7 +15,7 @@ return (
             </div>
         </Link>
         <div className="navbar-menu">
-            <Link to='/about'><p className="menu-item">About</p></Link>
+            <Link to='/'><p className="menu-item">About</p></Link>
             <span className="divider"></span>
             <Link to='/events'><p className="menu-item">Events</p></Link>
             <span className="divider"></span>

@@ -1,6 +1,8 @@
 .logo {
-    height: 175px;
+    height: 100px;
     width: auto;
+    padding: 10px;
+    margin: 0 10px;
     will-change: filter;
     transition: filter 300ms;
 }
@@ -21,13 +23,14 @@ filter: drop-shadow(0 0 2em #646cff);
     width: 100%;
     height: auto;
     position: sticky;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 .navbar-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .navbar-stack {
