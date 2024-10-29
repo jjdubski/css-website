@@ -2,6 +2,15 @@
     "rewrites": [
     {
         "source": "/(.*)",
-        "destination": "/index.html"
-    }]
+        "destination": "/"
+    },
+    {
+        "source": "/components/(.*)",
+        "destination": "/src/components/$1"
+    },
+    {
+        "source": "/pages/(.*)",
+        "destination": "/src/pages/$1"
+    }
+    ]
 }
