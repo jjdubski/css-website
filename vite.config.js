@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // '@': path.resolve(path.dirname(new URL(import.meta.url).pathname), './src'), // '@' now points to the 'src' folder
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, './'),
     },
   },
 })

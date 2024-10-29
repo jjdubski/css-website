@@ -1,4 +1,4 @@
-import Navbar from '@/components/navbar/Navbar'
+import Navbar from '@/src/components/navbar/Navbar'
 import "./events.css"
 
 

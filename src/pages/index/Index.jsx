@@ -1,6 +1,6 @@
 // import React, { useEffect, useState } from 'react';
 // import axios from 'axios';
-import Navbar from '../../../src/components/navbar/Navbar'
+import Navbar from '@/src/components/navbar/Navbar'
 import Welcome from '../../../src/components/welcome/Welcome'
 import "./index.css"
 
