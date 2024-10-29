@@ -11,6 +11,7 @@ const Welcome = () => {
             <div className="welcome-intro">Welcome to the Computer Science Society at DePaul University. 
                 We are a student organization that aims to provide a community for students interested in computer science. 
                 We host events, workshops, and projects to help students learn and grow in the field of computer science. 
+                Please join our Discord server to stay up to date with our events and connect with other students.
             </div>
             <Link to="/dashboard">
                 <div className="welcome-button">Join our Discord</div>
