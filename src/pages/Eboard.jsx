@@ -1,5 +1,5 @@
 import Navbar from '../components/navbar/NavBar'
-import "./eboard.css"
+import "./styles/eboard.css"
 
 
 const Eboard = () => {

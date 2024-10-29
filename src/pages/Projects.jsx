@@ -1,5 +1,5 @@
-import Navbar from '@/src/components/navbar/Navbar'
-import "./projects.css"
+import Navbar from '../components/navbar/NavBar'
+import "./styles/projects.css"
 
 
 const Projects = () => {

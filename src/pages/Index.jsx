@@ -2,7 +2,7 @@
 // import axios from 'axios';
 import Navbar from '../components/navbar/NavBar'
 import Welcome from '../components/welcome/Welcome'
-import "./index.css"
+import "./styles/index.css"
 
 
 const Index = () => {
