@@ -33,7 +33,7 @@ const Welcome = () => {
             </p>
         </div>
         <div className="button-cont">
-            <Link to="https://discord.gg/4ctEQqNQ"><div className="discord-button">Join our Discord</div></Link>
+            <Link to="https://discord.gg/2WN7ZyDV7j"><div className="discord-button">Join our Discord</div></Link>
         </div>
     </div>
   )
