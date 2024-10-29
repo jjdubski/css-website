@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Index from './pages/index/Index';
-import About from './pages/about/About';
-import Events from './pages/events/Events';
-import Projects from './pages/projects/Projects';
-import Eboard from './pages/eboard/Eboard';
+import Index from './pages/Index';
+import About from './pages/About';
+import Events from './pages/Events';
+import Projects from './pages/Projects';
+import Eboard from './pages/Eboard';
 import "./App.css"
 
 function App() {
