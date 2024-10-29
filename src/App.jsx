@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Index from './pages/index';
+import Index from './pages/index/Index';
 import About from './pages/about/About';
 import Events from './pages/events/Events';
 import Projects from './pages/projects/Projects';
