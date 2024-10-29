@@ -65,6 +65,7 @@ filter: drop-shadow(0 0 2em #646cff);
     justify-content: center;   
     align-items: center;
     gap: 2.5vw;
+    margin-top: 10px;
 } 
 
 .navbar-menu .divider {
@@ -87,5 +88,9 @@ filter: drop-shadow(0 0 2em #646cff);
         color: var(--color-secondary);
         transition: all 0.2s ease-out;
     }
+}
+
+.menu-item:hover {
+    color: var(--color-secondary);
 }
 
