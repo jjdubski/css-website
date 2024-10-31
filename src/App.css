@@ -29,7 +29,7 @@
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 900;
   text-align: center;
-  margin: 50px 0 0  ;
+  margin: 20px 0 0  ;
   font-size: clamp(1.5em, calc(130% + 1.5vw), 2.2em); /* Adjust font size relative to viewport width */
 }
 
@@ -41,7 +41,9 @@
 }
 
 .info{
-  
+  font-family: Lato;
+  font-size: 0.9em;
+  color: rgb(170, 170, 170);
 }
 
 
