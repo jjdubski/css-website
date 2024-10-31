@@ -24,6 +24,7 @@ filter: drop-shadow(0 0 2em #646cff);
     height: auto;
     position: sticky;
     padding: 20px 0;
+    margin-bottom: 50px;
     background: rgb(37,150,190);
     background: linear-gradient(100deg, rgba(37,150,190,1) 41%, rgba(133,130,159,1) 71%, rgba(210,68,68,1) 100%);
 }
@@ -32,11 +33,18 @@ filter: drop-shadow(0 0 2em #646cff);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    width: fit-content;
+    margin: 0 auto 10px;
+}
+
+.header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-stack {
-    text-wrap: balance;
+    text-wrap: pretty;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +73,7 @@ filter: drop-shadow(0 0 2em #646cff);
     justify-content: center;   
     align-items: center;
     padding: 10px 0 0;
-    gap: clamp(10px, 3vw, 150px);
+    gap: clamp(10px, 3vw, 200px);
 } 
 
 .navbar-menu .divider {

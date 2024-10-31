@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Welcome = () => {
   return (
     <div className='welcome-cont'>
-        <div className="welcome-title">Welcome to the Computer Science Society (CSS)!</div>
-        <div className="welcome-date">Last Updated: October 29, 2024</div>
+        <div className="title" style={{marginBottom: 20}}>Welcome to the Computer Science Society (CSS)!</div>
+        <div className="info">Last Updated: October 29, 2024</div>
         <div className="welcome-msg">
             <p className="msg">Welcome to the Computer Science Society at DePaul University. 
                 We are a student organization that aims to provide a community for students interested in computer science. 

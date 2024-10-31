@@ -5,15 +5,15 @@ import logo from '/images/logo.png'
 const Navbar = () => {
 return (
     <div className='navbar-cont'>
-        <Link to="/">
-            <div className="navbar-header">
+        <div className="navbar-header">
+            <Link to="/" className="header-link">
                 <img src={logo} alt="" className="logo" height={200} width={200}/>
                 <div className="navbar-stack">
                     <p className="title">Computer Science Society</p>
                     <p className="subtitle">@DePaul University, Chicago</p>
                 </div>
-            </div>
-        </Link>
+            </Link>
+        </div>
         <div className="navbar-menu">
             <Link to='/'><p className="menu-item">About</p></Link>
             <span className="divider"></span>

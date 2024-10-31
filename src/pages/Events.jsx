@@ -1,14 +1,34 @@
 import Navbar from '../components/navbar/NavBar'
+import Event from '../components/event/Event'
 import "./styles/events.css"
+import Footer from '../components/footer/Footer'
 
 
 const Events = () => {
   return (
     <>
     <Navbar/>
-    <div className='events'>
-        <h1>Events</h1>
+    <div className="events">
+      <h1 className='title'>Upcoming Events</h1>
+      <p className='info' id='events-info'>Click on event to learn more & sign up!</p>
+      <div className='events-cont'>
+        <Event/>
+        <Event/>
+      </div>
+      <h1 className='title'>Past Events</h1>
+      <p className='info' id='events-info'>Click on event to learn more & view available photos!</p>
+      <div className='events-cont'>
+        <Event/>
+        <Event/>
+        <Event/>
+        <Event/>
+        <Event/>
+        <Event/>
+        <Event/>
+        <Event/>
+      </div>
     </div>
+    <Footer/>
     </>
   )
 }
