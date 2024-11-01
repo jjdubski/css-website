@@ -39,3 +39,9 @@
 .footer-right div{
     margin-right: 10px;
 }
+
+.footer-right div > img{
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));   
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}

@@ -14,12 +14,11 @@ const Events = () => {
       <div className='events-cont'>
         <Event/>
         <Event/>
+        <Event/>
       </div>
-      <h1 className='title'>Past Events</h1>
+      <h1 className='title' style={{marginTop:70}}>Past Events</h1>
       <p className='info' id='events-info'>Click on event to learn more & view available photos!</p>
       <div className='events-cont'>
-        <Event/>
-        <Event/>
         <Event/>
         <Event/>
         <Event/>

@@ -9,7 +9,7 @@ return (
             <Link to="/" className="header-link">
                 <img src={logo} alt="" className="logo" height={200} width={200}/>
                 <div className="navbar-stack">
-                    <p className="title">Computer Science Society</p>
+                    <p className="title" style={{marginTop: 0}}>Computer Science Society</p>
                     <p className="subtitle">@DePaul University, Chicago</p>
                 </div>
             </Link>
