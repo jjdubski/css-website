@@ -1,4 +1,26 @@
+.meeting-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+  background-image: url(/images/CPU.png);
+  background-size: cover;
+  background-position: center;
+}
 
+.meeting-info > h1{
+  text-wrap: balance;
+  text-align: center;
+  width: fit-content;
+  margin: 0 20px;
+  background-color: white;
+  color: var(--color-text);
+  font-size: min(1.7em, 2.5vw);
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 1em var(--color-white);
+}
 
 
 /* OLD CSS */

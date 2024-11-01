@@ -19,12 +19,12 @@ filter: drop-shadow(0 0 1em var(--color-secondary));
 }
 
 .navbar-cont {
-    box-shadow: 1px 1px 5px rgb(177, 177, 177);
+    box-shadow: 3px 3px 1em var(--color-white);
     width: 100%;
     height: auto;
     position: sticky;
     padding: 20px 0;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     background: rgb(37,150,190);
     background: linear-gradient(100deg, rgba(37,150,190,1) 41%, rgba(133,130,159,1) 71%, rgba(210,68,68,1) 100%);
 }
