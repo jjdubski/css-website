@@ -16,11 +16,11 @@ return (
         </div>
         <div className="navbar-menu">
             <Link to='/'><p className="menu-item">About</p></Link>
-            <span className="divider"></span>
+            <span className="navbar-divider"></span>
             <Link to='/events'><p className="menu-item">Events</p></Link>
-            <span className="divider"></span>
+            <span className="navbar-divider"></span>
             <Link to='/projects'><p className="menu-item">Projects</p></Link>
-            <span className="divider"></span>
+            <span className="navbar-divider"></span>
             <Link to='/eboard'><p className="menu-item">eBoard</p></Link>
             {/* <Link to='/eboard'><button className="menu-item-button">eboard</button></Link> */}
         </div>

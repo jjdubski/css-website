@@ -23,8 +23,9 @@
     align-items: center;
     margin: 20px auto;
     width: fit-content;
-    padding: 10px 20px;
+    padding: 15px 50px;
     background-color: var(--color-third);
+    border-radius: 50px;
 }
 
 .button-cont{
@@ -35,6 +36,10 @@
 .button-cont a{
     color: var(--color-white);
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.1em;
     text-decoration: none;
+}
+
+.welcome-cont > .title{
+    text-align: center;
 }
