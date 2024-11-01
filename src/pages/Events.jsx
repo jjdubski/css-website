@@ -11,14 +11,14 @@ const Events = () => {
     <div className="events">
       <h1 className='title'>Upcoming Events</h1>
       <p className='info' id='events-info'>Click on event to learn more & sign up!</p>
-      <div className='events-cont'>
+      <div className='grid'>
         <Event/>
         <Event/>
         <Event/>
       </div>
       <h1 className='title' style={{marginTop:70}}>Past Events</h1>
       <p className='info' id='events-info'>Click on event to learn more & view available photos!</p>
-      <div className='events-cont'>
+      <div className='grid'>
         <Event/>
         <Event/>
         <Event/>

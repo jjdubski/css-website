@@ -6,14 +6,6 @@
     height: fit-content;
 }
 
-.events-cont{
-    width: clamp(360px, 90%, 1400px);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-}
-
 /* .events-cont{
     height: fit-content;    
     width: 80%;

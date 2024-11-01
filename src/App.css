@@ -46,6 +46,22 @@
   color: rgb(170, 170, 170);
 }
 
+.grid{
+  width: clamp(360px, 90%, 1400px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-self: center;
+  gap: 50px;
+}
+
+@media screen and (max-width: 1500px){
+  .grid{
+      justify-content: center;
+  }
+  
+}
+
 
 /* OLD CSS */
 
