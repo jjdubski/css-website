@@ -40,8 +40,18 @@
     margin-right: 10px;
 }
 
-.footer-right div > img{
+.social{
     -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 1));   
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    will-change: filter;
+    transition: filter 200ms;
+}
+.social:hover{ 
+    -webkit-filter: drop-shadow(1px 1px 2em var(--color-text));    
+    filter: drop-shadow(1px 1px 2em var(--color-text));    
+}
+.social.react:hover{ 
+    -webkit-filter: drop-shadow(1px 1px 2em var(--color-text));    
+    filter: drop-shadow(1px 1px 2em var(--color-text));    
 }

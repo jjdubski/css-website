@@ -8,6 +8,12 @@
     height: fit-content;
 }
 
+.event-cont:hover{
+    filter: drop-shadow(5px 5px 1em var(--color-text-light));
+    box-shadow: 3px 3px 3px var(--color-text);
+    transition: box-shadow 0.2s;
+}
+
 .event-cont > .subtitle{
     background-color: var(--color-primary-light);
     color: var(--color-white);
