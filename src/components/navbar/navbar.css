@@ -4,13 +4,13 @@
     padding: 10px;
     margin: 0 10px;
     will-change: filter;
-    transition: filter 300ms;
+    transition: filter 200ms;
 }
 .logo:hover {
-filter: drop-shadow(0 0 2em #646cffaa);
+filter: drop-shadow(0 0 2em var(--color-white));
 }
 .logo.react:hover {
-filter: drop-shadow(0 0 2em #646cff);
+filter: drop-shadow(0 0 2em var(--color-text-light));
 }
 
 .navbar-cont a {
