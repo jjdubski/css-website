@@ -5,6 +5,7 @@ const Welcome = () => {
   return (
     <div className='welcome-cont'>
         <div className="title" style={{marginBottom: 20}}>Welcome to the Computer Science Society (CSS)!</div>
+        <div className="divider" style={{width: "100%", marginBottom: 30}}></div>
         <div className="info">Last Updated: October 29, 2024</div>
         <div className="welcome-msg">
             <p className="msg">Welcome to the Computer Science Society at DePaul University. 
