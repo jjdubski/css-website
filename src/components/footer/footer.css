@@ -23,7 +23,11 @@
     align-items: center;
     width: 50%;
     padding-left: 20px;
-    text-wrap: pretty;
+}
+
+.copyright{
+    text-wrap: balance;
+    font-size: clamp(0.5em, 4vw, 1em);
 }
 
 .footer-right{
