@@ -19,7 +19,7 @@ filter: drop-shadow(0 0 1em var(--color-secondary));
 }
 
 .navbar-cont {
-    box-shadow: 3px 3px 1em var(--color-white);
+    box-shadow: -1px 5px 10px var(--color-text-light);
     width: 100%;
     height: auto;
     position: sticky;

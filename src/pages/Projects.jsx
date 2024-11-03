@@ -7,7 +7,9 @@ const Projects = () => {
     <>
     <Navbar/>
     <div className='projects'>
-        <h1>Projects</h1>
+        <h1 className='title'>Project Inquiry</h1>
+        <div className="info" id='projects-info'>Working on a project and cod</div>
+        <div className="divider"></div>
     </div>
     </>
   )

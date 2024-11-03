@@ -12,7 +12,9 @@ const Index = () => {
     <Navbar/>
     <div className='index'>
       <div className="meeting-info">
-        <h1>Our weekly meetings are every Wednesday @ 4:30pm in Lewis 1007</h1>
+        <div className="glass">
+          <h1>Meetings every Wednesday @ 4:30pm in Lewis 1007</h1>
+        </div>
       </div>
       <Welcome/>
     </div>
