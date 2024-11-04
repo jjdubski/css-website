@@ -62,6 +62,15 @@
   
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  width: clamp(300px, 90%, 1400px);
+}
+
 .divider{
   height: 5px;
   background-color: var(--color-white);
@@ -71,6 +80,75 @@
   margin-bottom: 50px;
   opacity: 0.8;
   /* box-shadow: 2px 2px 2px var(--color-text-light); */
+}
+
+#subtitle-info{
+  text-align: center;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.tile-cont{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  color: var(--color-text);
+  border-radius: 30px;
+  min-width: 300px;
+  height: fit-content;
+}
+
+.tile-cont:hover{
+  filter: drop-shadow(5px 5px 1.5em var(--color-text-light));
+  box-shadow: 5px 5px 5px var(--color-text);
+  transition: all 0.2s ease-in-out;
+}
+
+.tile-cont > .subtitle{
+  color: var(--color-white);
+  text-shadow: 1px 2px 2px var(--color-text);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.tile-body{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  gap: 10px;
+}
+
+.learn-more{
+  margin: 50px 0 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+
+.msg-cont{
+  max-width: 90%;
+  margin: 10px 0;
+}
+.msg{
+  margin: 0 0 30px 0;
+  line-height: 1.5;
+}
+
+.button-cont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  gap: 2em;
+}
+.button-cont a{
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1.1em;
+  text-decoration: none;
 }
 
 /* OLD CSS */

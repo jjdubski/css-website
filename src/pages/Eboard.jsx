@@ -1,5 +1,7 @@
 import Navbar from '../components/navbar/NavBar'
-import "./styles/eboard.css"
+import Footer from '../components/footer/Footer'
+import Member from '../components/member/Member'
+import "./styles/eboard.css";
 
 
 const Eboard = () => {
@@ -7,8 +9,14 @@ const Eboard = () => {
     <>
     <Navbar/>
     <div className='eboard'>
-        <h1>Eboard</h1>
+        <h1 className='title'>Executive Board</h1>
+        <p className="info" id='subtitle-info'>Meet the team behind our originzation</p>
+        <div className='divider'></div>
+        <div className="member-cont">
+          <Member name={'Jacob Waksmanski'} image='/images/logo.png'/>
+        </div>
     </div>
+    <Footer/>
     </>
   )
 }

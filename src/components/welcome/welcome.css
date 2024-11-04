@@ -8,15 +8,6 @@
     margin: 0 auto;
 }
 
-.welcome-msg{
-    margin: 10px 0;
-}
-
-.welcome-msg p{
-    margin: 0 0 30px 0;
-    line-height: 1.5;
-}
-
 .discord-button{
     display: flex;
     justify-content: center;
@@ -25,19 +16,15 @@
     width: fit-content;
     padding: 15px 50px;
     background-color: var(--color-third);
+    border: 2px solid transparent;
     border-radius: 50px;
 }
 
-.button-cont{
-    width: fit-content;
-    justify-content: center;
-    align-self: center;
-}
-.button-cont a{
-    color: var(--color-white);
-    font-weight: 500;
-    font-size: 1.1em;
-    text-decoration: none;
+.discord-button:hover{
+    border: 2px solid var(--color-third);
+    background-color: transparent;
+    transition: all 0.1 s ease-in-out;
+    box-shadow: 1px 1px 2em var(--color-third);
 }
 
 .welcome-cont > .title{

@@ -6,6 +6,10 @@
     height: fit-content;
 }
 
+.events > .flex-grid > .tile-cont > .subtitle{
+    background-color: var(--color-primary-light);
+}
+
 /* .events-cont{
     height: fit-content;    
     width: 80%;
@@ -13,9 +17,3 @@
     grid-template-columns: repeat(auto-fit, 300px);
     gap: clamp(2%, 50px, 10%);
 } */
-
-#events-info{
-    text-align: center;
-    margin-bottom: 15px;
-    opacity: 0.8;
-}

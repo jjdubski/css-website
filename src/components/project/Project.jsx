@@ -1,10 +1,10 @@
-import "./event.css"
+import "./project.css"
 import chevron from "/images/chevron-right.svg"
 
-const Event = () => {
+const Project = () => {
 return (
     <div className='tile-cont'>
-        <h2 className="subtitle">Event Title</h2>
+        <h2 className="subtitle">Project Title</h2>
         <div className="tile-body">
             <p className="tile-date-time">Event Date</p>
             <p className="info">Event Description</p>
@@ -14,4 +14,4 @@ return (
   )
 }
 
-export default Event;
+export default Project;

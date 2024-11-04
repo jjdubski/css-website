@@ -6,8 +6,37 @@
     height: fit-content;
 }
 
-#projects-info{
-    text-align: center;
-    margin-bottom: 15px;
-    opacity: 0.8;
+.project-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid var(--color-secondary);
+    border-radius: 50px;
+}
+
+.project-button:hover{
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: var(--color-secondary);
+    transition: all 0.1s ease-in-out;
+    box-shadow: 1px 1px 2em var(--color-secondary);
+}
+
+.project-button:nth-of-type(2){
+    border: 2px solid transparent;
+    background-color: var(--color-secondary);
+}
+
+.project-button:nth-of-type(2):hover{
+    cursor: pointer;
+    border: 2px solid var(--color-secondary);
+    background-color: transparent;
+}
+
+.projects > .grid > .tile-cont > .subtitle{
+    background-color: var(--color-secondary);
 }

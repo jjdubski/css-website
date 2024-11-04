@@ -7,7 +7,7 @@ const Welcome = () => {
         <div className="title" style={{marginBottom: 20}}>Welcome to the Computer Science Society (CSS)!</div>
         <div className="divider" style={{width: "100%", marginBottom: 30}}></div>
         <div className="info">Last Updated: October 29, 2024</div>
-        <div className="welcome-msg">
+        <div className="msg-cont">
             <p className="msg">Welcome to the Computer Science Society at DePaul University. 
                 We are a student organization that aims to provide a community for students interested in computer science. 
                 We host events, workshops, and projects to help students learn and grow in the field of computer science. 
