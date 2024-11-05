@@ -12,11 +12,11 @@ const Projects = () => {
         <h1 className='title'>Project Inquiry</h1>
         <p className="info subtext">Working on a project and need code? Want to code but need a project?</p>
         <div className="divider" style={{marginBottom: 30}}></div>
-        <div className="msg-cont">
+        <div className="msg-cont" style={{width: '90%', textAlign: 'center'}}>
           <p className="msg">Whether you need help finding someone to work with or finding a project to work on, we got you covered.</p>
           <p className="info subtext" style={{textAlign: 'center', marginBottom: 0}}>Fill out the corresponding Google form below:</p>
         </div>
-        <div className="button-cont" style={{display: 'flex'}}>
+        <div className="button-cont">
           <div className="project-button">Project Proposal</div>
           <div className="project-button">Join the Project Team</div>
         </div>
