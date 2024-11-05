@@ -11,10 +11,17 @@
     gap: 20px;
 }
 
-.footer-left img{
+.footer-logo{
     width: 50px;
     height: 50px;
     margin-right: 10px;
+}
+
+.footer-logo:hover {
+    filter: drop-shadow(0 0 0.5em var(--color-secondary));
+}
+.footer-logo.react:hover {
+filter: drop-shadow(0 0 0.5em var(--color-secondary));
 }
 
 .footer-left{
@@ -53,10 +60,10 @@
     transition: filter 200ms;
 }
 .social:hover{ 
-    -webkit-filter: drop-shadow(3px 3px 2em var(--color-text));    
-    filter: drop-shadow(3px 3px 2em var(--color-text));    
+    -webkit-filter: drop-shadow(3px 3px 2em var(--color-secondary));    
+    filter: drop-shadow(3px 3px 2em var(--color-secondary));    
 }
 .social.react:hover{ 
-    -webkit-filter: drop-shadow(1px 1px 2em var(--color-text));    
-    filter: drop-shadow(1px 1px 2em var(--color-text));    
+    -webkit-filter: drop-shadow(1px 1px 2em var(--color-secondary));    
+    filter: drop-shadow(1px 1px 2em var(--color-secondary));    
 }
