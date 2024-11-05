@@ -1,10 +1,10 @@
 .welcome-cont{
-    text-wrap: pretty;
+    text-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: left;
-    width: clamp(300px, 75%, 1000px);
+    width: clamp(300px, 75%, 1100px);
     margin: 0 auto;
 }
 
