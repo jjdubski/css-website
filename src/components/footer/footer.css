@@ -8,6 +8,7 @@
     padding: 20px 0;
     color: white;
     margin-top: 120px;
+    gap: 20px;
 }
 
 .footer-left img{
@@ -27,7 +28,7 @@
 
 .copyright{
     text-wrap: balance;
-    font-size: clamp(0.5em, 4vw, 1em);
+    font-size: clamp(0.7em, 3vw, 1em);
 }
 
 .footer-right{

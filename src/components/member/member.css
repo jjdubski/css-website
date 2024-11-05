@@ -19,9 +19,9 @@
     border-radius: 50%;
 }
 
-.member-desc{
+.member-desc > p{
     text-wrap: stable;
-    font-size: clamp(14px, 1vw, 28px);
+    font-size: clamp(1em, 1vw, 1.25em);
     max-height: 600px;
 }
 

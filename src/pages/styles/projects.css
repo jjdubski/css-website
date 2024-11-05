@@ -20,20 +20,19 @@
 
 .project-button:hover{
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 0.15em solid transparent;
     background-color: var(--color-secondary);
     transition: all 0.1s ease-in-out;
     box-shadow: 1px 1px 2em var(--color-secondary);
 }
 
 .project-button:nth-of-type(2){
-    border: 2px solid transparent;
+    border: 0.15em solid transparent;
     background-color: var(--color-secondary);
 }
 
 .project-button:nth-of-type(2):hover{
-    cursor: pointer;
-    border: 2px solid var(--color-secondary);
+    border: 0.15em solid var(--color-secondary);
     background-color: transparent;
 }
 

@@ -1,4 +1,5 @@
 import "./navbar.css"
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import logo from '/images/logo.png'
 
@@ -15,13 +16,13 @@ return (
             </Link>
         </div>
         <div className="navbar-menu">
-            <Link to='/'><p className="menu-item">About</p></Link>
+            <NavLink to='/' className={({ isActive }) => isActive ? 'menu-item active' : 'menu-item'}>About</NavLink>
             <span className="navbar-divider"></span>
-            <Link to='/events'><p className="menu-item">Events</p></Link>
+            <NavLink to='/events' className={({ isActive }) => isActive ? 'menu-item active' : 'menu-item'}>Events</NavLink>
             <span className="navbar-divider"></span>
-            <Link to='/projects'><p className="menu-item">Projects</p></Link>
+            <NavLink to='/projects' className={({ isActive }) => isActive ? 'menu-item active' : 'menu-item'}>Projects</NavLink>
             <span className="navbar-divider"></span>
-            <Link to='/eboard'><p className="menu-item">eBoard</p></Link>
+            <NavLink to='/eboard' className={({ isActive }) => isActive ? 'menu-item active' : 'menu-item'}>eBoard</NavLink>
             {/* <Link to='/eboard'><button className="menu-item-button">eboard</button></Link> */}
         </div>
     </div>

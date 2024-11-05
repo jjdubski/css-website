@@ -16,12 +16,12 @@
     width: fit-content;
     padding: 15px 50px;
     background-color: var(--color-third);
-    border: 2px solid transparent;
+    border: 0.15em solid transparent;
     border-radius: 50px;
 }
 
 .discord-button:hover{
-    border: 2px solid var(--color-third);
+    border: 0.15em solid var(--color-third);
     background-color: transparent;
     transition: all 0.1 s ease-in-out;
     box-shadow: 1px 1px 2em var(--color-third);
