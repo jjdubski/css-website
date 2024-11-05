@@ -112,10 +112,11 @@ filter: drop-shadow(0 0 1em var(--color-secondary));
 }
 
 .menu-item{
+    padding: 0 0.5em;
     cursor: pointer;
     font-size: clamp(0.9em, 4vw, 1.1rem);
     font-weight: 400;
-    border-bottom: 2px solid transparent;
+    border-bottom: 0.2em solid transparent;
     /* text-shadow: 
     -1px 1px 1px black,
     1px -1px 1px black,
@@ -125,9 +126,9 @@ filter: drop-shadow(0 0 1em var(--color-secondary));
 
 .menu-item:hover {
     font-weight: 400;   
-    border-bottom: 2px solid var(--color-secondary);
+    border-bottom: 0.2em solid var(--color-secondary);
     color: var(--color-secondary);
-    transition: all 0.2s ease-out;
+    transition: all 0.2s ease-in-out;
     /* text-shadow:     
     -1px 1px 1em rgb(255, 0, 0),
     1px -1px 1em rgb(255, 0, 0),
@@ -137,5 +138,5 @@ filter: drop-shadow(0 0 1em var(--color-secondary));
 
 .menu-item.active {
     font-weight: 400;
-    border-bottom: 2px solid var(--color-secondary);
+    border-bottom: 0.2em solid var(--color-white);
 }
