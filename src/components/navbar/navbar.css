@@ -13,7 +13,7 @@ filter: drop-shadow(0 0 1em var(--color-secondary));
 filter: drop-shadow(0 0 1em var(--color-secondary));
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 500px){
     .logo {
         margin: 0;
     }
