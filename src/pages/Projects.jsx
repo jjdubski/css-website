@@ -13,7 +13,7 @@ const Projects = () => {
         <p className="info" id='subtitle-info'>Working on a project and need code? Want to code but need a project?</p>
         <div className="divider" style={{marginBottom: 30}}></div>
         <div className="msg-cont">
-          <p className="msg">Whether you need help finding someone to work with or to find a project to work on, we got you covered.</p>
+          <p className="msg">Whether you need help finding someone to work with or finding a project to work on, we got you covered.</p>
           <p className="info" id='subtitle-info' style={{textAlign: 'center', marginBottom: 0}}>Fill out the corresponding Google form below:</p>
         </div>
         <div className="button-cont" style={{display: 'flex'}}>

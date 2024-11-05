@@ -147,6 +147,13 @@
   align-self: center;
   gap: 2em;
 }
+
+@media screen and (max-width: 500px){
+  .button-cont{
+      gap: 10px;
+  }
+  
+}
 .button-cont a{
   color: var(--color-white);
   font-weight: 500;
