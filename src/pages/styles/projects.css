@@ -14,7 +14,7 @@
     width: fit-content;
     padding: 10px 30px;
     background-color: transparent;
-    border: 2px solid var(--color-secondary);
+    border: 0.15em solid var(--color-secondary);
     border-radius: 50px;
 }
 
