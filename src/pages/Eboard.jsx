@@ -13,7 +13,7 @@ const Eboard = () => {
         <p className="info" id='subtitle-info'>Meet the team behind our originzation</p>
         <div className='divider'></div>
         <div className="member-cont">
-          <Member name={'Nick Dillato'} image='/images/nicholas_dilallo.png' pos={'President/Treasurer'} desc={`Senior-level computer science student with a minor in data science 
+          <Member name={'Nicholas Dilallo'} image='/images/nicholas_dilallo.png' pos={'President/Treasurer'} desc={`Senior-level computer science student with a minor in data science 
             who aspires to become a software developer. As a student at DePaul University, I am constantly seeking out new challenges and
             opportunities to grow both personally and professionally. With a solid foundation in programming languages and a passion for 
             problem-solving, I am well-equipped to tackle complex projects and develop innovative solutions.`}/>
