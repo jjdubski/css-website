@@ -10,7 +10,7 @@ const Eboard = () => {
     <Navbar/>
     <div className='eboard'>  
         <h1 className='title'>Executive Board</h1>
-        <p className="info" id='subtitle-info'>Meet the team behind our originzation</p>
+        <p className="info subtext">Meet the board members behind our organization</p>
         <div className='divider'></div>
         <div className="member-cont">
           <Member name={'Nicholas Dilallo'} image='/images/nicholas_dilallo.png' pos={'President/Treasurer'} desc={`Senior-level computer science student with a minor in data science 

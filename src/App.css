@@ -43,8 +43,14 @@
 
 .info{
   font-family: Lato;
-  font-size: 0.95em;
-  color: var(--color-text-gray);
+  font-size: clamp(0.95em, 4vw, 1.1em);
+  color: var(--color-text-light);
+}
+
+.subtext{
+  text-align: center;
+  margin-bottom: 15px;
+  opacity: 0.8;
 }
 
 .flex-grid{
@@ -81,13 +87,6 @@
   margin-bottom: 50px;
   opacity: 0.8;
   /* box-shadow: 2px 2px 2px var(--color-text-light); */
-}
-
-#subtitle-info{
-  color: var(--color-text-light);
-  text-align: center;
-  margin-bottom: 15px;
-  opacity: 0.8;
 }
 
 .tile-cont{
