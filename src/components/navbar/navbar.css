@@ -32,12 +32,12 @@ filter: drop-shadow(0 0 1em var(--color-secondary));
     padding: 20px 0;
     /* margin-bottom: 50px; */
     background: rgb(37,150,190);
-    background: linear-gradient(100deg, rgba(125, 205, 255,1) 0%, rgba(37,150,190,1) 25%, rgba(37,150,190,1) 70%, rgba(133,130,159,1) 80%, rgba(210,68,68,1) 100%);
+    background: linear-gradient(100deg, rgba(125, 205, 255,1) 0%, rgba(37,150,190,1) 20%, rgba(37,150,190,1) 70%, rgba(133,130,159,1) 80%, rgba(210,68,68,1) 100%);
 }
 
 @media screen and (max-width: 1000px){
     .navbar-cont {
-        background: linear-gradient(90deg, rgba(125, 205, 255,1) 0%, rgba(37,150,190,1) 20%, rgba(37,150,190,1) 70%, rgba(133,130,159,1) 82%, rgba(210,68,68,1) 100%);
+        background: linear-gradient(90deg, rgba(125, 205, 255,1) 0%, rgba(37,150,190,1) 17%, rgba(37,150,190,1) 70%, rgba(133,130,159,1) 82%, rgba(210,68,68,1) 100%);
     }
     
 }
