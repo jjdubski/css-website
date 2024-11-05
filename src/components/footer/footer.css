@@ -52,8 +52,8 @@
     transition: filter 200ms;
 }
 .social:hover{ 
-    -webkit-filter: drop-shadow(1px 1px 2em var(--color-text));    
-    filter: drop-shadow(1px 1px 2em var(--color-text));    
+    -webkit-filter: drop-shadow(3px 3px 2em var(--color-text));    
+    filter: drop-shadow(3px 3px 2em var(--color-text));    
 }
 .social.react:hover{ 
     -webkit-filter: drop-shadow(1px 1px 2em var(--color-text));    

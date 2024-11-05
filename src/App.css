@@ -101,7 +101,8 @@
 }
 
 .tile-cont:hover{
-  filter: drop-shadow(5px 5px 1.5em var(--color-text-light));
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 1em var(--color-white));
   box-shadow: 5px 5px 5px var(--color-text);
   transition: all 0.2s ease-in-out;
 }
