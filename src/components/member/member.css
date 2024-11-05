@@ -19,6 +19,10 @@
     border-radius: 50%;
 }
 
+.member-desc > h1{
+    font-size: clamp(1.5em, 2vw, 1.75em);
+}
+
 .member-desc > p{
     text-wrap: stable;
     font-size: clamp(1em, 1vw, 1.2em);
