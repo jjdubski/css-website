@@ -14,7 +14,7 @@ const Projects = () => {
         <div className="divider" style={{marginBottom: 30}}></div>
         <div className="msg-cont">
           <p className="msg">Whether you need help finding someone to work with or to find a project to work on, we got you covered.</p>
-          <p className="info" style={{textAlign: 'center'}}>Fill out the corresponding Google form below:</p>
+          <p className="info" id='subtitle-info' style={{textAlign: 'center', marginBottom: 0}}>Fill out the corresponding Google form below:</p>
         </div>
         <div className="button-cont" style={{display: 'flex'}}>
           <div className="project-button">Project Proposal</div>

@@ -1,8 +1,38 @@
-.member{
+.member {
     display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    height: fit-content;
+    gap: 2em;
+    margin-bottom: 40px;
 }
-.member > img{
-    width: 100px;
-    height: 100px;
+
+@media screen and (max-width: 800px){
+    .member{
+        flex-wrap: wrap;
+    }
+    
+}
+.member > img {
+    width: clamp(150px, 12vw, 300px);
+    height: clamp(150px, 12vw, 300px);
     border-radius: 50%;
+}
+
+.member-desc{
+    text-wrap: stable;
+    font-size: clamp(14px, 1vw, 28px);
+    max-height: 600px;
+}
+
+.member-desc > .info{
+    margin: 0 0 5px 0;
+    font-size: 1.1em; 
+    color: var(--color-text-light);
+}
+
+.member-desc > .divider{
+    height: 1px;
+    width: clamp(150px, 100%, 350px);
+    margin: 0 0 10px 0;
 }
