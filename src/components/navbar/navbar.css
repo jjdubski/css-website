@@ -127,7 +127,7 @@ filter: drop-shadow(0 0 1em var(--color-secondary));
     font-weight: 400;   
     border-bottom: 2px solid var(--color-secondary);
     color: var(--color-secondary);
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
     /* text-shadow:     
     -1px 1px 1em rgb(255, 0, 0),
     1px -1px 1em rgb(255, 0, 0),
