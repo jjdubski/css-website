@@ -103,10 +103,12 @@ filter: drop-shadow(0 0 1em var(--color-secondary));
 .navbar-divider {
     height: 100%;
     width: 1px;
-    padding: 1em 1px ;
+    padding: 1em 1px;
+    margin: 0;
     color: white;
     background-color: white;
     opacity: 0.5;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .menu-item{
