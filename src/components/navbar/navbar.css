@@ -44,7 +44,7 @@ filter: drop-shadow(0 0 1em var(--color-secondary));
 
 @media screen and (max-width: 600px){
     .navbar-cont {
-        background: linear-gradient(80deg, rgba(37,150,190,1) 70%, rgba(133,130,159,1) 85%, rgba(210,68,68,1) 100%);
+        background: linear-gradient(80deg, rgba(37,150,190,1) 70%, rgba(133,130,159,1) 88%, rgba(210,68,68,1) 100%);
     }
 }
 
