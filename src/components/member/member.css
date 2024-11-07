@@ -4,11 +4,8 @@
     min-height: 100px;
     height: fit-content;
     gap: 2em;
-    margin-bottom: 75px;
-}
-
-.member:last-of-type{
-    margin-bottom: 0;
+    margin-bottom: 50px;
+    padding: 1em 2em;
 }
 
 @media screen and (max-width: 1100px){

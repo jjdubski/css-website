@@ -54,20 +54,21 @@
 }
 
 .flex-grid{
-  width: clamp(300px, 90%, 1400px);
+  width: clamp(320px, 90%, 1400px);
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center; /* Center the flex container */
+  align-items: center;
   align-self: center;
-  gap: 50px;
+  gap: max(2%, 50px);
 }
-
-@media screen and (max-width: 1500px){
+/* 
+@media screen and (max-width: 1180px){
   .flex-grid{
       justify-content: center;
   }
   
-}
+} */
 
 .grid{
   display: grid;
@@ -75,13 +76,13 @@
   gap: 50px;
   justify-content: center;
   align-items: center;
-  width: clamp(300px, 90%, 1400px);
+  width: clamp(320px, 90%, 1400px);
 }
 
 .divider{
   height: 5px;
   background-color: var(--color-white);
-  width: clamp(300px, 60%, 800px);
+  width: clamp(320px, 60%, 800px);
   border: 10px white;
   border-radius: 10px;
   margin-bottom: 50px;
@@ -92,6 +93,7 @@
 .tile-cont{
   display: flex;
   justify-self: center;
+  justify-content: space-between;
   flex-direction: column;
   background-color: var(--color-white);
   color: var(--color-text);
@@ -101,7 +103,7 @@
 }
 
 .flex-grid > .tile-cont{
-  width: 300px;
+  width: 320px;
 }
 
 .grid > .tile-cont{
@@ -117,9 +119,16 @@
 
 .tile-cont:hover{
   cursor: pointer;
-  filter: drop-shadow(5px 5px 1em var(--color-white));
+  filter: drop-shadow(5px 5px 0.5em var(--color-primary));
   box-shadow: 5px 5px 5px var(--color-text);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-out;
+}
+
+.grid > .tile-cont:hover{
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 0.5em var(--color-secondary));
+  box-shadow: 5px 5px 5px var(--color-text);
+  transition: all 0.2s ease-out;
 }
 
 .tile-cont > .subtitle{
@@ -127,14 +136,13 @@
   text-shadow: 1px 2px 2px var(--color-text);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding: 5px 10px;
+  padding: 10px 0px;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-  text-overflow: ellipsis;
   box-sizing: border-box;
-  font-size: calc(1.25em + 0.4vw); /* Adjust font size relative to viewport width */
+  font-size: min(max(1.1em, 1em + 0.4vw), 1.25em);
 }
 
 .tile-body{
