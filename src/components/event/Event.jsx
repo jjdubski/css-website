@@ -1,17 +1,41 @@
 import "./event.css"
 import chevron from "/images/chevron-right.svg"
+import Popup from "../popup/Popup"
+import { useState } from 'react'
+import PropTypes from 'prop-types'
 
-const Event = () => {
+const Event = ({event}) => {
+const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+const handleOpenPopup = () => {
+    setIsPopupOpen(true);   
+};
+
+const handleClosePopup = () => {
+    setIsPopupOpen(false);
+};
 return (
-    <div className='tile-cont'>
-        <h2 className="subtitle">Event Title</h2>
-        <div className="tile-body">
-            <p className="tile-date-time">Event Date</p>
-            <p className="info">Event Description</p>
+    <>
+        <div className='tile-cont' onClick={handleOpenPopup}>
+            <h2 className="subtitle">{event.title}</h2>
+            <div className="tile-body">
+                <p className="tile-date-time">{event.date}</p>
+                <p className="info">{event.description}</p>
+            </div>
             <p className="learn-more">Learn more<img src={chevron} alt=">" height={10}/></p>
         </div>
-    </div>
+        <Popup isOpen={isPopupOpen} onClose={handleClosePopup} event={event}/>
+    </>
   )
 }
+
+Event.propTypes = {
+    event: PropTypes.shape({
+        title: PropTypes.string,
+        date: PropTypes.string,
+        description: PropTypes.string,
+        googleDriveLink: PropTypes.string,
+    }).isRequired,
+};
 
 export default Event;

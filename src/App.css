@@ -95,8 +95,16 @@
   background-color: var(--color-white);
   color: var(--color-text);
   border-radius: 30px;
-  min-width: 300px;
+  width: 300px;
   height: fit-content;
+  min-height: 300px;
+}
+
+.tile-date-time{
+  margin: 0;
+  justify-content: flex-start;
+  align-self: center;
+  font-size: 1.25em;
 }
 
 .tile-cont:hover{
@@ -111,23 +119,43 @@
   text-shadow: 1px 2px 2px var(--color-text);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding: 5px 0;
+  padding: 5px 10px;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  font-size: calc(1.25em + 0.4vw); /* Adjust font size relative to viewport width */
 }
 
 .tile-body{
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  padding: 20px 20px;
-  gap: 10px;
+  padding: 10px 20px;
+  min-height: 200px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tile-body >  .info{
+  /* font-size: clamp(0.75em, 1.5vw, 1em); */
+  max-height: 80px;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  margin: auto 0;
+  overflow: hidden;
 }
 
 .learn-more{
-  margin: 50px 0 0;
-  display: flex;
+  /* margin: 50px 0 0; */
+  /* display: flex;
+  justify-self: flex-end;
   justify-content: start;
   align-items: center;
-  gap: 5px;
+  gap: 5px; */
+  margin: 0 0 20px 20px;
 }
 
 .msg-cont{

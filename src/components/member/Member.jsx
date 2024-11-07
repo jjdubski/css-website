@@ -19,7 +19,7 @@ Member.propTypes = {
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     pos: PropTypes.string.isRequired, 
-    desc: PropTypes.string.isRequired, 
+    desc: PropTypes.string, 
 };
 
 export default Member;
