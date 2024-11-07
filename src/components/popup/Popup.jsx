@@ -8,10 +8,12 @@ const Popup = ({ isOpen, onClose, event }) => {
     return (
     <div className="popup-overlay" onClick={onClose}>
         <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-        <button className="popup-close" onClick={onClose}>X</button>
-        <h2>{event.title}</h2>
-        <p>{event.description}</p>
-        <a href={event.googleDriveLink} target="_blank" rel="noopener noreferrer">View Photos</a>
+            <button className="popup-close" onClick={onClose}>X</button>
+            <h2>{event.title}</h2>
+            <p>{event.description}</p>
+            {event.googleDriveLink && (
+                <a href={event.googleDriveLink} target="_blank" rel="noopener noreferrer">View Photos</a>
+            )}
         </div>
     </div>
     );

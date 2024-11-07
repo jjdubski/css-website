@@ -31,9 +31,9 @@ return (
 
 Event.propTypes = {
     event: PropTypes.shape({
-        title: PropTypes.string,
-        date: PropTypes.string,
-        description: PropTypes.string,
+        title: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
         googleDriveLink: PropTypes.string,
     }).isRequired,
 };
