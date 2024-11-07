@@ -19,7 +19,7 @@ return (
         <div className='tile-cont' onClick={handleOpenPopup}>
             <h2 className="subtitle">{event.title}</h2>
             <div className="tile-body">
-                <p className="tile-date-time">{event.date}</p>
+                <p className="tile-header">{event.date}</p>
                 <p className="info">{event.description}</p>
             </div>
             <p className="learn-more">Learn more<img src={chevron} alt=">" height={10}/></p>
